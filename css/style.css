@@ -1,35 +1,194 @@
-/* Rules */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
 
+body {
+  font-family: 'Lato', sans-serif;
 }
-.contact .avatar {
-  height: 100%;
-  padding-right: 10px;
-}
-.avatar img{
-  border-radius: 50%;
-}
-/* Sfondo Chat */
+
+/* Basi Layout */
 .background-chat {
   background: linear-gradient(180deg, #009688 12%, #d8dbd5 12%);
   height: 100vh;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  min-width: 800px;
+  /* Possibilità di usare Display: Flex Justify-content : center align-items : center*/
 }
 
 /* Box Chat Principale */
 .main-box {
-    width: 90%;
-    height: 90%;
-    background: #eae9e8;
-    padding: 10px;
-    position: relative;
-    left: 100px;
-    top: 60px;
+  width: 90%;
+  height: 90%;    background: #eae9e8;
+  position: relative;
+  left: 100px;
+  top: 60px;
 }
-/**//**//**//**/
+/* Fine Box Chat Principale */
+
+/* Inizio Top Bar Contatti */
+.col-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgrey;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  /* Fine Top Bar Contatti */
+}
+
+/* Reparto Avatar */
+.avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.contacts .avatar {
+  height: 100%;
+  padding-right: 10px;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  margin: 10px;
+}
+
+/* Fine Reparto Avatar */
+
+/* Colonna Sinistra Chat */
+.chat-col-left {
+  height: 100%;
+  width: 30%;
+  background-color: white;
+  float: left;
+}
+
+.col-header-chat {
+  background-color: lightgrey;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content:
+}
+
+/* Notifiche */
+.notifications {
+  background-color: #e5e5f7;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.notifications .logo {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  margin: 10px;
+}
+
+.notifications .logo i {
+  font-size: 20px;
+  line-height: 50px;
+  color: grey;
+}
+
+.notifications .notifications-settings a{
+  font-size: 14px;
+}
+
+.notifications p {
+  color: grey;
+}
+
+/* Fine Notifiche*/
+
+/* Barra Ricerca Contatti */
+.icons li {
+  display: inline-block;
+  font-size: 18px;
+  color: grey;
+  margin: 6px;
+  left: 160px;
+}
+
+.search-contacts {
+  background-color: #f7f2f2;
+  height: 60px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.search-contacts input {
+  width: calc(100% - 50px);
+  height: 40px;
+  border: solid white;
+}
+
+.search-contacts label {
+  padding: 10px;
+  color: grey;
+ }
+
+.search-bar {
+  align-items: center;
+  padding: 20px 15px;
+  background-color: #f7f2f2;
+}
+/* Fine Barra Ricerca */
+
+/* Elenco Chat Aperte */
+.contacts {
+  width: 100%;
+  background-color: #f7f2f2;
+  height: calc(100% - 100px;);
+  overflow-y: scroll;
+}
+
+.single-contact {
+  align-items: center
+  padding: 20px 10px;
+}
+
+.single-contact .contact-time {
+  font-size: 12px;
+  color: lightgrey;
+}
+/* Fine Colonna Sinistra */
+
+/* Colonna Destra Chat */
+.chat-col-right {
+  height: 100%;
+  width: 70%;
+  background-image: ("..img/mine.jpg");
+  float: left;
+}
+/* Contatto Chat aperta */
+.contact-info {
+  flex-grow: 1;
+}
+
+.contact-info h3 {
+  font-size: 15px;
+}
+
+.contact-info span {
+  display: inline-block;
+  font-size: 13px;
+  color: gray;
+  flex-grow: 1px;
+}
+/* Fine Contatto Chat aperta */
+/* Fine Colonna Destra Chat */
+/**//**/
+ 
